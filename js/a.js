@@ -15,10 +15,10 @@ let pen = document.getElementById("pen");
 let erase = document.getElementById("erase");
 let download = document.getElementById("download");
 let color = document.getElementsByTagName("li");
-console.log(color)
+let clear = document.getElementById("clear");
+
 canvas.setAttribute("width", width);
 canvas.setAttribute("height", height);
-// let erase = document.getElementById("erase");
 canvas.style.cssText = "top:" + (document.documentElement.clientHeight - height) + "px";
 canvas.onmousedown = function (e) {
     flag = true;
@@ -82,6 +82,10 @@ download.onclick = function () {
     a.download = "xxxx"
     a.click()
 }
+clear.onclick = function () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
 for (let i = 0; i < color.length; i++) {
     color[i].onclick = function (e) {
         lineColor = e.target.dataset.color;
