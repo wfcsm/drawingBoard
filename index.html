@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的画板</title>
+    <script src="//at.alicdn.com/t/font_1104187_35y9328ylhx.js"></script>
+    <link rel="stylesheet"  href="./css/a.css">
+    
+</head>
+
+<body>
+    <canvas id="canvas">
+
+    </canvas>
+    <div class="btn-wrapper">
+
+        <svg id="pen" class="icon active" aria-hidden="true">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+
+
+        <svg id="erase" class="icon ">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+
+        <ul class="clearfix">
+            <li id="black" class="black active" data-color="black"><span>√</span></li>
+            <li id="yellow" class="yellow" data-color="yellow"></li>
+            <li id="blue" class="blue" data-color="blue"></li>
+            <li id="green" class="green" data-color="green"></li>
+        </ul>
+        <svg id="download" class="icon ">
+            <use xlink:href="#icon-xiazai"></use>
+        </svg>
+    </div>
+    <script src="./js/a.js"></script>
+   
+</body>
+
+</html>

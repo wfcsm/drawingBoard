@@ -1,0 +1,95 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: white;
+}
+
+#canvas {
+    /* background: red; */
+    background-image: linear-gradient(to right, #6f92b4 1px, transparent 1px),
+        linear-gradient(to bottom, #6f92b4, transparent 1px);
+    background-size: 18px 18px;
+    position: fixed;
+    left: 0;
+    border-bottom: 2px solid #6f92b4;
+}
+
+.btn-wrapper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+svg.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+svg.active {
+    fill: red;
+    transition: all .3s;
+    transform: scale(1.1)
+}
+
+svg:hover {
+    fill: red;
+    transform: scale(1.1);
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul>li {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    float: left;
+    margin-left: 10px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+ul>li.active {
+    transition: all .3s;
+    transform: scale(1.2);
+}
+
+.black {
+    background: black
+}
+
+.yellow {
+    background: yellow
+}
+
+.blue {
+    background: blue
+}
+
+.green {
+    background: green
+}
